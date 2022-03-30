@@ -1,0 +1,15 @@
+.logo {
+  height: 64px;
+  width: 64px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 35px;
+  }
+}

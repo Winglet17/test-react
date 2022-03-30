@@ -1,0 +1,64 @@
+.painting-image {
+  width: 100%;
+}
+.painting-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .painting-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .painting-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.info {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 5px 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.painting:hover .info {
+  height: 50%;
+  padding-bottom: 44px;
+  transition: height 0.5s;
+}
+.painting:hover .text {
+  display: block;
+}
+.text-header {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+.painting:hover .text-header {
+  margin-bottom: 6px;
+}
+.painting {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.text {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: none;
+}
+.text:last-child {
+  margin-bottom: 0;
+}
+.text span {
+  font-weight: 300;
+}
